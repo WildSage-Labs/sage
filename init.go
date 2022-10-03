@@ -1,4 +1,4 @@
-package internal
+package sage
 
 func NewSage() (error, *Sage) {
 	return nil, &Sage{}

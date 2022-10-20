@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/WildSage-Labs/sage"
 	"os"
 
@@ -16,14 +15,16 @@ var (
 	BuildDate     = "N/A"
 )
 
-//TODO: Read
-
 func main() {
 	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stderr})
-	fmt.Println("Hello, world! I am a wise sage that stares into cosmos")
-	err, sage := sage.NewSage()
+	log.Debug().
+		Str("Commit", GitCommit).
+		Str("Version", BinaryVersion).
+		Str("Build date", BuildDate).
+		Msg("Sage is starting up")
+	err, s := sage.NewSage()
 	if err != nil {
 		panic(err.Error())
 	}
-	sage.Start()
+	s.Start()
 }

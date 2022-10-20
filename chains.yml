@@ -1,0 +1,12 @@
+chains:
+  - chain-id: phoneix-1
+    name: Terra 2.0 mainnet
+    wallets: [ "terra14047v5xmjgvkjzdhf6l2w2c44tcvyszpldv57z", "terra1st4g9u7yz2h4fjh2hhgg7vdclz8qpe4sk7z8ku", "terra1q8w4u2wyhx574m70gwe8km5za2ptanny95la5z", "terra1j4cc2p4f4t4m3z37gumr6cr64vm605aa4ph956" ]
+    denoms: [ "uluna" ]
+    rpc: [ "https://rpc-terra.wildsage.io:443","https://rpc-terra-2.wildsage.io:443","https://rpc-terra-3.wildsage.io:443" ]
+    lcd: [ "https://lcd-terra.wildsage.io", "https://lcd-terra-2.wildsage.io", "https://lcd-terra-3.wildsage.io" ]
+  - chain-id: pisco-1
+    name: Terra 2.0 testnet
+    wallets: [ "terra1q8w4u2wyhx574m70gwe8km5za2ptanny95la5z" ]
+    rpc: [ "https://rpc-terra.wildsage.io:443","https://rpc-terra-2.wildsage.io:443","https://rpc-terra-3.wildsage.io:443" ]
+    lcd: [ "https://lcd-terra.wildsage.io", "https://lcd-terra-2.wildsage.io", "https://lcd-terra-3.wildsage.io" ]
